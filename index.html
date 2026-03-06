@@ -2,125 +2,8 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-      <title>Portfolio Personale | Studente Informatica</title>
-    <style>
-        /* --- SEZIONE CSS (Stile della pagina) --- */
-        
-        body {
-            font-family: 'Alan Sans';
-            line-height: 1.7;
-            margin: 0;
-            padding: 0;
-            background-color: gray;
-            color: #333;
-        }
-
-        header {
-            background: #E0FFFF;
-            color:#1a5276;
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        nav {
-            background: #2c3e50;
-            padding: 10px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            margin: 0 15px;
-            font-weight: bold;
-            transition: color 0.3s;
-        }
-
-        nav a:hover {
-            color: #3498db;
-        }
-
-        main {
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 20px;
-            background: white;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            border-radius: 8px;
-        }
-
-        section {
-            margin-bottom: 40px;
-        }
-
-        h2 {
-            color: #1e3c72;
-            border-bottom: 3px solid #3498db;
-            padding-bottom: 10px;
-        }
-
-        /* Stile Tabella */
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-            background-color: #fff;
-        }
-
-        table th, table td {
-            padding: 20px;
-            text-align: center;
-            border: 1px solid #ddd;
-        }
-
-        table th {
-            background-color: #3498db;
-            color: white;
-            text-transform: uppercase;
-        }
-
-        table tr:nth-child(even) {
-            background-color: #f2f2f2;
-        }
-
-        table tr:hover {
-            background-color: #e9f7ff;
-        }
-
-        /* Stile Progetti */
-        .card-progetto {
-            background: #f8f9fa;
-            border-left: 5px solid #1e3c72;
-            padding: 15px;
-            margin: 15px 0;
-            border-radius: 4px;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: #2c3e50;
-            color: white;
-            margin-top: 40px;
-        }
-
-        /* Badge per la tabella */
-        .status {
-            padding: 4px 8px;
-            border-radius: 12px;
-            font-size: 0.85rem;
-            font-weight: bold;
-            background: #d4edda;
-            color: #155724;
-        }
-
-        .paragrafot { 
-            text-align:left;
-        }
-    </style>
+      <title>Portfolio | Invernizzi Simone</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alan+Sans:wght@300..900&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
@@ -128,53 +11,93 @@
 <body>
 
     <header>
-        <h1>Portfolio di Invernizzi Simone</h1>
-        <p>I.T.I.S P. Paleocapa | Classe 1ª superiore</p>
+        <h1><a href="#">Portfolio di Invernizzi Simone</a></h1>
+        <p>I.T.I.S P. Paleocapa | Classe 1ªID</p>
     </header>
+
+    <nav>
+            <ul>
+                <li><a href="#profilo" class="active">Chi Sono</a></li>
+                <li><a href="#competenze">Competenze</a></li>
+                <li><a href="#progetti">Progetti</a></li>
+            </ul>
+    </nav>
 
     <main>
         <section id="profilo">
             <h2>Chi Sono...?</h2>
-            <p>Benvenuti nel mio portfolio! Sono uno studente appassionato di tecnologia e programmazione. In questo spazio raccolgo i miei progressi scolastici e i piccoli progetti che sviluppo durante le ore di laboratorio.</p>
+            <p>
+                Benvenuti nel mio portfolio! Sono uno studente appassionato di tecnologia e programmazione. In questo spazio raccolgo i miei progressi scolastici e i piccoli progetti che sviluppo durante le ore di laboratorio.<br>
+                Attualmente frequento il primo anno dell'I.T.I.S. P. Paleocapa di Bergamo, dove sto iniziando a costruire le basi per diventare un futuro professionista dell'informatica.
+            </p>
         </section>
 
         <section id="competenze">
     <h2>Le Mie Competenze</h2>
-    <p>Di seguito sono elencate le materie tecniche e i linguaggi che sto affrontando quest'anno:</p>
+    <p>Di seguito sono elencate le materie tecniche che sto affrontando quest'anno scolastico:</p>
     <table>
         <thead>
             <tr>
-                <th>Materia</th>
-                <th>Argomento</th>
+                <th>Disciplina</th>
+                <th>Descrizione</th>
                 <th>Stato</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>Microsoft Office</td>
-                <td>
-                    <ul>
-                        <li>Microsoft Word</li>
-                        <li>Microsoft Excel</li>
-                        <li>Microsoft PowerPoint</li>
-                    </ul>
-                </td>
-                <td><span class="status">Completato</span></td>
+                <td rowspan="4">Informatica</td>
+                <td>Microsoft Office (Word, Excel, PowerPoint)</td>
+                <td><span class="completato">Completato</span></td>
             </tr>
             <tr>
-                <td>TTRG</td>
-                <td>Disegno Tecnico</td>
-                <td><span class="status">In corso</span></td>
+                <td>Web Design (HTML5, CSS3, JS)</td>
+                <td><span class="incorso">In Corso</span></td>
             </tr>
             <tr>
-                <td>Sistemi e Reti</td>
-                <td>Architettura del PC (Hardware)</td>
-                <td><span class="status">Completato</span></td>
+                <td>Linguaggi di Programmazione (Java, Python, C++...)</td>
+                <td><span class="noniniziato">Non Iniziato</span></td>
             </tr>
             <tr>
-                <td>Web Design</td>
-                <td>HTML5 e CSS3</td>
-                <td><span class="status">In corso</span></td>
+                <td>Componenti del PC - Hardware e Software</td>
+                <td><span class="completato">Completato</span></td>
+            </tr>
+            <tr>
+                <td rowspan="2">TTRG</td>
+                <td>Elementi Geometrici di Base</td>
+                <td><span class="completato">Completato</span></td>
+            </tr>
+            <tr>
+                <td>Proiezioni Ortogonali</td>
+                <td><span class="incorso">In Corso</span></td>
+            </tr>
+            <tr>
+                <td rowspan="7">Matematica</td>
+                <td>Insiemi e Logica</td>
+                <td><span class="completato">Completato</span></td>
+            </tr>
+            <tr>
+                <td>Numeri</td>
+                <td><span class="completato">Completato</span></td>
+            </tr>
+            <tr>
+                <td>Calcolo Letterale</td>
+                <td><span class="incorso">In Corso</span></td>
+            </tr>
+            <tr>
+                <td>Frazioni Algebriche</td>
+                <td><span class="noniniziato">Non Iniziato</span></td>
+            </tr>
+            <tr>
+                <td>Equazioni</td>
+                <td><span class="noniniziato">Non Iniziato</span></td>
+            </tr>
+            <tr>
+                <td>Geometria Euclidea</td>
+                <td><span class="noniniziato">Non Iniziato</span></td>
+            </tr>
+            <tr>
+                <td>Sistemi di Equazioni</td>
+                <td><span class="noniniziato">Non Iniziato</span></td>
             </tr>
         </tbody>
     </table>
@@ -183,18 +106,30 @@
         <section id="progetti">
             <h2>I Miei Progetti</h2>
             <div class="card-progetto">
-                <h3>Sito Web Personale</h3>
+                <h3>Personale</h3>
                 <p>Realizzazione di un portfolio statico per presentare le proprie passioni (quello che stai guardando!).</p>
-            </div>
-            <div class="card-progetto">
-                <h3>Diagrammi di Flusso</h3>
-                <p>Sviluppo di algoritmi per la risoluzione di problemi matematici complessi (es. calcolo dell'ipotenusa).</p>
+                <!-- From Uiverse.io by Creatlydev --> 
+                <a href="https://github.com/invernizzisimonestudente-maker/portfolio/tree/main" class="btn-github" target="_blank">
+                <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                >
+                    <path
+                    d="M7.99992 1.33331C7.12444 1.33331 6.25753 1.50575 5.4487 1.84078C4.63986 2.17581 3.90493 2.66688 3.28587 3.28593C2.03563 4.53618 1.33325 6.23187 1.33325 7.99998C1.33325 10.9466 3.24659 13.4466 5.89325 14.3333C6.22659 14.3866 6.33325 14.18 6.33325 14C6.33325 13.8466 6.33325 13.4266 6.33325 12.8733C4.48659 13.2733 4.09325 11.98 4.09325 11.98C3.78659 11.2066 3.35325 11 3.35325 11C2.74659 10.5866 3.39992 10.6 3.39992 10.6C4.06659 10.6466 4.41992 11.2866 4.41992 11.2866C4.99992 12.3 5.97992 12 6.35992 11.84C6.41992 11.4066 6.59325 11.1133 6.77992 10.9466C5.29992 10.78 3.74659 10.2066 3.74659 7.66665C3.74659 6.92665 3.99992 6.33331 4.43325 5.85998C4.36659 5.69331 4.13325 4.99998 4.49992 4.09998C4.49992 4.09998 5.05992 3.91998 6.33325 4.77998C6.85992 4.63331 7.43325 4.55998 7.99992 4.55998C8.56659 4.55998 9.13992 4.63331 9.66659 4.77998C10.9399 3.91998 11.4999 4.09998 11.4999 4.09998C11.8666 4.99998 11.6333 5.69331 11.5666 5.85998C11.9999 6.33331 12.2533 6.92665 12.2533 7.66665C12.2533 10.2133 10.6933 10.7733 9.20659 10.94C9.44659 11.1466 9.66659 11.5533 9.66659 12.1733C9.66659 13.0666 9.66659 13.7866 9.66659 14C9.66659 14.18 9.77325 14.3933 10.1133 14.3333C12.7599 13.44 14.6666 10.9466 14.6666 7.99998C14.6666 7.1245 14.4941 6.25759 14.1591 5.44876C13.8241 4.63992 13.333 3.90499 12.714 3.28593C12.0949 2.66688 11.36 2.17581 10.5511 1.84078C9.7423 1.50575 8.8754 1.33331 7.99992 1.33331V1.33331Z"
+                    fill="currentcolor"
+                    ></path>
+                </svg>
+                <span>Visualizza su Github</span>
+                </a>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 - Creato con HTML e CSS per il corso di Informatica</p>
+        <p><a href="#">&copy; Portfolio di Invernizzi Simone</a>, creato con HTML5 e CSS3</p>
     </footer>
 
 </body>
